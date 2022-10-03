@@ -1,0 +1,507 @@
+
+/* ESTILOS GENERALES */
+html,body {
+    height: 100%;
+}
+/* MODIFICAR EL MODELO DE CAJAS DE CSS */
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+/* RESETEAR MARGENES Y PADDING */
+* {
+    margin: 0%;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+/* ESTILOS DE LOS CONTENIDOS */
+/* ESTILOS DEL HEADER */
+header {
+    background-color: rgb(11, 117, 11);
+    padding-left: 35px;
+}
+#logo {
+    float: left;
+    
+}
+#infoContacto  {
+    float: right;
+    margin-top: 21px;
+    margin-right: 38px;
+}
+#infoContacto i {
+	color: #fff;
+	font-size: 1.20rem;
+    padding: 2.5px;
+}
+
+#infoContacto a i:hover {
+    color: rgb(0, 60, 255); 
+    border-radius: 5px;
+}
+/* Seccion 1 */
+article > section:nth-child(1) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(55,185,30,0.83)), to(rgba(25,59,240,0.83))), url(../images/fondo_superior.jpg);
+    background-image: -o-linear-gradient(rgba(55,185,30,0.83), rgba(25,59,240,0.83)), url(../images/fondo_superior.jpg);
+    background-image: linear-gradient(rgba(55,185,30,0.83), rgba(25,59,240,0.83)), url(../images/fondo_superior.jpg);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 2.80rem;
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.col h3 {
+    font-size: 1.10rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+#intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: 100%;
+    min-height: 600px;
+  
+}
+
+#formulario {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+}
+
+#formulario {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px 1em;
+    border-radius: 15px;
+}
+
+#formulario h2 {
+    font-size: 1.40rem;
+    margin-bottom: 40px;
+}
+
+#descripcion {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    padding: 0 1em;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    color: #fff;
+}
+
+#descripcion p {
+    margin-bottom: 30px;
+    line-height: 1.65;
+}
+
+#descripcion i {
+	font-size: 0.90rem;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 9px;
+    margin: 0 auto;
+    margin-right: 10px;
+	background-color: #fff;
+	color: #008000;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 0.90rem;
+}
+
+input[type="text"], input[type="email"] {
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    padding: 0 1em;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    background-color: #008000;
+    width: 100%;
+    padding: 10px 1em;
+    margin: 25px auto;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+input:hover[type="submit"] {
+    background-color: rgb(54, 97, 61);
+    color: #000;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+small a {
+    color: #000;
+}
+
+/* Seccion 2 */
+article > section:nth-child(2) {
+    padding: 60px 0;
+}
+
+#seccionDos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+}
+
+#seccionDos i {
+    color: #13a3db;
+    font-size: 2.5rem;
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 48px 0;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 35px;
+}
+
+/* Seccion 3 */
+article > section:nth-child(3) {
+    background-color: #f6f9fd ;
+    padding: 40px 0;
+}
+
+#seccionTres {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+}
+
+#seccionTres div{
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    width: 60%;
+    height: 100%;
+    padding-right: 1.5em;
+}
+video {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    width: 40%;
+    height: 100%;
+}
+
+#seccionTres a {
+    display: inline-block;
+    background-color: #008000;
+    padding: 12px 10em;
+    text-decoration: none;
+    margin: 25px 0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#seccionTres a:hover {
+    color: #000;
+    background-color: rgb(54, 97, 61);
+    border-radius: 5px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* seccion 4 */
+article > section:nth-child(4) {
+    padding: 60px 0 0;
+    text-align: center;
+}
+
+#seccionCuatro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 50px auto;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin: 20px 0.5rem;
+    -webkit-box-shadow: 2px 5px 15px #ccc9c9;
+            box-shadow: 2px 5px 15px #ccc9c9;
+    padding-bottom: 30px;
+}
+
+.card p {
+    font-size: 0.90rem;
+    padding: 12px 2em;
+}
+
+.card i {
+    font-size: 1.5rem;
+    color: #107ba7;
+    margin: 0 0.2em;
+}
+
+.card i:hover {
+  -webkit-box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+          box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgb(0, 110, 255);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;   
+}
+
+/* Seccion 5 */
+article > section:nth-child(5) {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(16, 123, 167)), to(rgba(16, 123, 167, 0.75))), url(../images/fondo_inferior.jpg);
+        background-image: -o-linear-gradient(rgb(16, 123, 167), rgba(16, 123, 167, 0.75)), url(../images/fondo_inferior.jpg);
+        background-image: linear-gradient(rgb(16, 123, 167), rgba(16, 123, 167, 0.75)), url(../images/fondo_inferior.jpg);
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+}
+
+#seccionCinco {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    height: 100%;
+    min-height: 330px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #fff;
+}
+
+#seccionCinco a {
+    color: #fff;
+    display: block;
+    background-color: #37b91e;
+    text-decoration: none;
+    padding: 12px 2em;
+    border-radius: 5px;
+}
+
+#seccionCinco a:hover{
+    background-color:rgb(54, 97, 61);
+    color: #000;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+
+#seccionCinco p {
+    padding: 20px;
+}
+
+#seccionCinco h2 {
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #2c2a2a;
+    padding: 20px 0;
+}
+
+.nav {
+    float: left;
+}
+
+#pieDePagina {
+    overflow: hidden;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 0.80rem;
+    padding: 12px 0 0;
+}
+
+.nav li a {
+    color: #c0bcbc;
+    text-decoration: none;
+    padding-right: 1.5em;
+}
+
+.nav li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    float: right;
+    color: #c0bcbc;
+    padding-top: 8px;
+}
+/* MEDIA QUERIES */
+/* Aplicar lo siguientes estilos cuando el tamano del viewport sea igual o menor que 3840px */
+@media screen and (max-width:3840px) {  
+    .container {
+        width: 91%;
+        max-width: 3840px;
+    }
+}
+/* Aplicar lo siguientes estilos cuando el tamano del viewport sea igual o menor que 1920px */
+@media screen and (min-width:960px) and (max-width:1199px) {
+    .col h3 {
+        font-size: 1.05rem;
+    }
+    h2 {
+        font-size: 1,43rem;
+    }
+}
+/* APLICAR LOS SIGUIENTES ESTILOS CUANDO EL TAMANO DEL VIEWPORT SEA IGUAL O MENOR QUE 959PX */
+@media screen and (max-width:959px) {
+    #intro {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+    }
+    #descripcion {
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        padding: 0 0 0 0;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    }
+    h1 {
+        font-size: 3.3rem;
+    }
+    #seccionDos {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column; 
+    }
+    .col {
+        padding: 30px 0;
+    }
+    article > section:nth-child(2) {
+    padding: 20px;
+    }
+    #seccionTres {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap;
+    }
+    #seccionTres div {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        padding-right: 0;
+    }
+    #seccionTres a {
+        width: 100%;
+        padding: 12px 0;
+        text-align: center; 
+    }
+    video {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        width: 100%;
+    }
+    article > section:nth-child(4){
+        padding: 30px 0 0;
+    }
+    #seccionCuatro {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+                flex-flow: column;
+    }
+    #seccionCinco {
+        text-align: center;
+    }
+}
+/* APLICAR LOS SIGUIENTES ESTILOSCUANDOEL TAMANO DEL VIEWPORT SEA IGUAL O MENOR QUE 659PX*/
+@media screen and (max-width:659px) {
+    #logo, #infoContacto {
+        width: 100%;
+        text-align: center;
+        margin: 5px auto;
+    }
+    footer {
+        text-align: center;
+    }
+    .nav {
+        float: none;
+    }
+    .nav li {
+        font-size: 0.80rem;
+        display: block;
+        margin: 20px 0;
+    }
+    .copyright {
+        float: none;
+        color: #c0bcbc;
+        border-top: 1px solid #3e3e3e;
+        margin-top: 30px;
+    }
+    .container {
+        max-width: 1920px;
+    }
+}
+
